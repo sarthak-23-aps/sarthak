@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(36,36,36,0.5), #000), url(header-image.png);
+    position: relative;
+    padding: 10px 8%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+nav img {
+    width: 160px;
+    height: auto;
+}
+
+nav select ,button {
+    border: 0;
+    outline: none;
+    background: rgb(206,12,12);
+    color: white;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-left: 7px;
+} 
+
+nav select {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 9px 20px;
+}
+
+nav option {
+    background: white;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.text {
+    
+    text-align: center;
+}
+
+@media only screen and (max-width:850px) {
+    header {
+        width: 100%;
+        height: 50vh;
+        
+        
+    }
+    nav img {
+        width: 50px;
+    }
+    button, select {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+}
